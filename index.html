@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LinkedIn</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="static/home.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/home.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="row navrow">
+				<div class="row navrow-left">
+					<div class="nav-left-space"></div>
+					<img src="static/logo.svg" width="30px" height="30px">
+					<div class="nav-logo-search-space"></div>
+					<div><input type="text" name="searchbar" id="nav-search-input" placeholder="   Search people, jobs, companies..."></div>
+					<img src="static/searchicon.svg" width="25px" height="25px">
+					</div>
+				<div class="row navrow-right">
+					<img src="static/message.svg" id="nav-message-icon" width="25px" height="25px">
+					<img src="static/bell.svg" id="nav-notification-icon" width="25px" height="25px">
+					<img src="static/settings.svg" id="nav-user-icon" width="25px" height="25px">
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="column" id="top-block">
+		<div id="cover-image-container">
+			<img id="coverphoto" src="static/cover2.png">
+			<img id="profilephoto" src="static/profilephoto.png">
+		</div>
+		<div class="row subnavrow">
+			<div><p class="subnav-tags">Home</p></div>
+			<div><p class="subnav-tags">Profile</p></div>
+			<div><p class="subnav-tags">Network</p></div>
+			<div><p class="subnav-tags">Amy J. Alexander</p></div>
+			<div><p class="subnav-tags">Learning</p></div>
+			<div><p class="subnav-tags">Jobs</p></div>
+			<div><p class="subnav-tags">Interest</p></div>
+		</div>
+	</div>
+
+	<div class="row contentrow">
+		<div class="column left-col-responsive"></div>
+		<div class="column new-job-col">
+			<div id="new-job-col-title">
+				Jobs you may be interested
+			</div>
+			<div class="column new-job-col-tile">
+				<div class="row new-job-first-block">
+					<img class="new-job-company-img" src="static/company-logo-1.png">
+					<div class="show-job-detail">Detail</div>
+				</div>
+				<div class="column new-job-second-block">
+					<p class="new-job-title">Software Engineer</p>
+					<p class="new-job-company">Google</p>
+					<p class="new-job-location">Mountain View, CA</p>
+				</div>
+			</div>
+			<div class="column new-job-col-tile">
+				<div class="row new-job-first-block">
+					<img class="new-job-company-img" src="static/company-logo-2.png">
+					<div class="show-job-detail">Detail</div>
+				</div>
+				<div class="column new-job-second-block">
+					<p class="new-job-title">Software Engineer</p>
+					<p class="new-job-company">Rolls-Royce</p>
+					<p class="new-job-location">Coraopolis, PA</p>
+				</div>
+			</div>
+			<div class="column new-job-col-tile">
+				<div class="row new-job-first-block">
+					<img class="new-job-company-img" src="static/company-logo-3.png">
+					<div class="show-job-detail">Detail</div>
+				</div>
+				<div class="column new-job-second-block">
+					<p class="new-job-title">HR Manager</p>
+					<p class="new-job-company">Paylocity</p>
+					<p class="new-job-location">Pittsburgh, PA</p>
+				</div>
+			</div>
+			<div class="row jobs-show-more">Show More
+				<!-- <p>Show More</p> -->
+			</div>
+		</div>
+
+		<div class="column content-col">
+			<div class="column" id="create-new-post">
+				<div class="row new-post-kind">
+					<p class="create-new-kind">New Post</p>
+					<p class="create-new-kind">Photos/Videos</p>
+					<p class="create-new-kind">Share Links</p>
+				</div>
+				<div class="row post-content">
+					<textarea rows="2" id="create-new-text" placeholder="What's on your mind?" cols="50"></textarea>
+				</div>
+				<div class="row">
+					<div id="select-who-can-view-text">Who can see this?</div>
+					<div id="select-who-can-view">
+						<select>
+							<option value="Public">Public</option>
+							<option value="My Connections">My Connections</option>
+							<option value="Groups">Groups</option>
+						</select>
+					</div>
+					<div id="post-this-message">Post</div>
+				</div>
+			</div>
+			<!-- When there is a new post -->
+			<div class="column a-post">
+				<div class="row userprofile">
+					<img src="static/userimg-1.png" class="userimg">
+					<div class="column post-user">
+						<p class="username">Buffy Keppler</p>
+						<p class="posttime">2 hours ago</p>
+					</div>
+				</div>
+				<div class="row postcontent">
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+				<div class="post-functions">
+					<div class="row likes">
+						<img class="function-icon like-icon" src="static/like.svg">
+						<p class="like-text">2 liked</p>
+						<div class="people-who-liked">
+							<img class="people-who-liked-photo" src="static/userimg-2.png">
+							<img class="people-who-liked-photo" src="static/userimg-3.png">
+						</div>
+					</div>
+					<div class="row comments">
+						<img src="static/comment.svg" class="function-icon comment-icon">
+						<p class="comment-text">2 comments</p>
+					</div>
+					<div class="row sharelink">
+						<img class="function-icon share-icon" src="static/share.svg">
+						<p class="share-text">4 shares</p>
+					</div>
+				</div>
+			</div>
+			<!-- When there is a new connection -->
+			<div class="column a-connection">
+				<div class="row userprofile">
+					<img src="static/userimg-2.png" class="userimg">
+					<div class="column post-user">
+						<p class="username">Vital Serrato Ríos</p>
+						<p class="posttime">3 hours ago</p>
+					</div>
+				</div>
+				<div class="row connection-content">
+					<img class="connect-with-photo" src="static/userimg-1.png">
+					<div class="column connect-with-info">
+						<p class="connect-with-someone">Connected with Buffy Keppler</p>
+						<p class="connect-with-someone-info">AP at Carnegie Mellon</p>
+					</div>
+					<div class="connect-with-action">Connect</div>
+				</div>
+				<div class="post-functions">
+					<div class="row likes">
+						<img class="function-icon like-icon" src="static/like.svg">
+						<p class="like-text">like</p>
+						<div class="people-who-liked">
+						</div>
+					</div>
+					<div class="row comments">
+						<img src="static/comment.svg" class="function-icon comment-icon">
+						<p class="comment-text">comment</p>
+					</div>					
+				</div>
+			</div>
+			<!-- When somebody gets a new job -->
+			<div class="column a-job">
+				<div class="row userprofile">
+					<img src="static/userimg-3.png" class="userimg">
+					<div class="column post-user">
+						<p class="username">Alice Yang</p>
+						<p class="posttime">6 hours ago</p>
+					</div>
+				</div>
+				<div class="row connection-content">
+					<img class="new-job-company-photo" src="static/company-logo-4.png">
+					<div class="column connect-with-info">
+						<p class="connect-with-someone">Congratulate on Alice's new job!</p>
+						<p class="connect-with-someone-info">Software Engineer at Facebook</p>
+					</div>
+					<div class="connect-with-action">See job</div>
+				</div>
+				<div class="post-functions">
+					<div class="row likes">
+						<img class="function-icon like-icon" src="static/like.svg">
+						<p class="like-text">like</p>
+						<div class="people-who-liked">
+						</div>
+					</div>
+					<div class="row comments">
+						<img src="static/comment.svg" class="function-icon comment-icon">
+						<p class="comment-text">comment</p>
+					</div>					
+				</div>
+			</div>
+			<!-- When there is a new article -->
+			<div class="column a-article">
+				<div class="row userprofile">
+					<img src="static/userimg-4.png" class="userimg">
+					<div class="column post-user">
+						<p class="username">The New York Times</p>
+						<p class="posttime">12 hours ago</p>
+					</div>
+				</div>
+				<div class="row article-box">
+					<img class="article-cover-photo" src="static/article-img-1.png">
+					<div class="column article-content">
+						<p class="article-title">Robots and Jobs</p>
+						<p class="article-detail">American investment in robots is not a solution to robots displacing human labor...</p>
+					</div>
+				</div>
+				<div class="post-functions">
+					<div class="row likes">
+						<img class="function-icon like-icon" src="static/like.svg">
+						<p class="like-text">like</p>
+						<div class="people-who-liked">
+						</div>
+					</div>
+					<div class="row sharelink">
+						<img class="function-icon share-icon" src="static/share.svg">
+						<p class="share-text">share</p>
+					</div>
+					<div class="row comments">
+						<img src="static/comment.svg" class="function-icon comment-icon">
+						<p class="comment-text">comment</p>
+					</div>					
+				</div>
+			</div>
+			<div class="row article-show-more">Show More
+				<!-- <p>Show More</p> -->
+			</div>
+			<div style="height: 500px;"></div>
+		</div>
+
+		<div class="column network-col">
+			<div id="new-job-col-title">
+				People you may know
+			</div>
+			<div class="column a-network">
+				<div class="row network-content">
+					<img class="connect-with-photo" src="static/ppl-you-know-1.png">
+					<div class="column network-info">
+						<p class="connect-with-someone">James McClinton</p>
+						<p class="connect-with-someone-info">Product Designer</p>
+						<p class="connect-with-someone-info">Uber</p>
+					</div>
+				</div>
+				<div class="row connect-actions">
+					<div>connect</div>
+					<div>message</div>
+				</div>
+			</div>
+			<div class="column a-network">
+				<div class="row network-content">
+					<img class="connect-with-photo" src="static/ppl-you-know-2.png">
+					<div class="column network-info">
+						<p class="connect-with-someone">Rebecca Diaz</p>
+						<p class="connect-with-someone-info">UX Researcher</p>
+						<p class="connect-with-someone-info">Lutron</p>
+					</div>
+				</div>
+				<div class="row connect-actions">
+					<div>connect</div>
+					<div>message</div>
+				</div>
+			</div>
+			<div class="row network-show-more">Show More
+				<!-- <p>Show More</p> -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>

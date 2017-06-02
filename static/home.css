@@ -1,0 +1,529 @@
+@import 'reset.css'
+
+html {
+	font-family: "Open Sans";
+	box-sizing: border-box;
+	min-width: 800px;
+}
+
+* {
+	font-family: "Open Sans";
+	font-size: 14px;
+}
+
+body {
+	margin: 0px;
+	min-width: 800px;
+	background: rgb(237,242,246);
+}
+
+div {
+	margin: 0px;
+	padding: 0px;
+}
+
+header nav {
+	width: 100%;
+	background-color: rgb(40,62,74);
+	margin: 0;
+	height: 50px;
+}
+
+header {
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;	
+}
+.navrow {
+	min-width: 800px;
+	overflow: hidden;
+}
+.navrow-left {
+	justify-content: flex-start;
+	align-items: center;
+	width: 50%;
+	min-width: 400px;
+	padding-left: 15vw;
+	height: 50px;
+}
+.navrow-left > img:hover {
+	cursor: pointer;
+}
+.navrow-right {
+	justify-content: flex-end;
+	align-items: center;
+	width: 50%;
+	padding-right: 15vw;
+	height: 50px;
+}
+.navrow-right > img:hover {
+	cursor: pointer;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+
+#nav-search-input {
+	width: 30vw;
+	min-width: 200px;
+	height: 30px;
+	margin: 0;
+	margin-left: 20px;
+	margin-right: 10px;
+	padding: 0;
+	border: 0;
+	border-radius: 2%;
+}
+
+#nav-message-icon {
+	margin-left: 1.5vw;
+}
+#nav-notification-icon {
+	margin-left: 1.5vw;
+}
+#nav-user-icon {
+	margin-left: 1.5vw;
+}
+
+#top-block {
+	/*margin-left: 15vw;
+	margin-right: 15vw;*/
+	
+	margin-bottom: 20px;
+	width: 100vw;
+	height: 200px;
+	background: white;
+}
+
+#cover-image-container {
+	width: 100%;
+	min-width: 800px;
+	height: 160px;
+	overflow: hidden;
+	position: relative;
+}
+#coverphoto {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#profilephoto {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	left: calc(50vw - 50px);
+	top: 53px;
+
+}
+.subnavrow {
+	justify-content: center;
+	min-width: 800px;
+	overflow: hidden;
+	height: 50px;
+	background: white;
+}
+.subnavrow > div:hover {
+	font-weight: 600;
+	cursor: pointer;
+	border-bottom: 2px solid rgb(40,62,74); 
+}
+.subnav-tags {
+	padding-left: 3vw;
+	padding-right: 3vw;
+	padding-top: 5px;
+}
+
+.contentrow {
+/*	margin-left: 10vw;
+	margin-right: 10vw;*/
+	margin-top: 20px;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.new-job-col {
+	min-width: 210px;
+	justify-content: flex-start;
+	/*border: 1px solid;*/
+	margin-right: 2vw;
+	width: 210px;
+	background: white;
+	padding: 10px;
+	margin-bottom: 20px;
+
+}
+
+.new-job-col-tile {
+	border-bottom: 1px solid #cccccc;
+	padding: 10px 0 10px 0;
+}
+.new-job-first-block {
+	height: 70px;
+}
+.new-job-company-img {
+	width: 70px;
+	height: 70px;
+}
+.show-job-detail {
+	font-size: 12px;
+	margin-left: 15px;
+	margin-top: 34px;
+	margin-bottom: 14px;
+	padding: 2px 4px 0px 4px;
+	border: 1px solid rgb(40,62,74);
+}
+.show-job-detail:hover {
+	color: white;
+	background: rgb(40,62,74);
+	cursor: pointer;
+}
+.new-job-title {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 600;
+
+}
+.new-job-company {
+	margin: 0;
+	font-weight: 500;
+}
+.new-job-location {
+	margin: 0;
+	font-size: 12px;
+}
+.new-job-divide {
+	color: rgb(230,230,230);
+	margin: 0 0 5px 0;
+}
+
+.content-col {
+	justify-content: flex-start;
+	/*border: 1px solid;*/
+	/*width: 36vw;*/
+	min-width: 510px;
+	width: 510px;
+	margin-right: 2vw;
+}
+#create-new-post {
+	padding: 10px;
+	background: white;
+}
+.create-new-kind {
+	padding: 0 10px 0 10px;
+	margin: 0;
+}
+.create-new-kind:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	font-weight: 600;
+}
+#create-new-text {
+	border: none;
+	box-shadow: none;
+	width: 400px;
+	border-radius: 2px;
+	margin: 10px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	box-shadow: none;
+	outline: 0;
+
+}
+#select-who-can-view-text {
+	margin: 2px 15px 0 10px;
+}
+#select-who-can-view {
+
+}
+#post-this-message {
+	border: 1px solid rgb(40,62,74);
+	color: rgb(40,62,74);
+	font-weight: 600;
+	margin-left: 150px;
+	padding: 0 10px 0 10px;
+}
+#post-this-message:hover {
+	color: white;
+	cursor: pointer;
+	background: rgb(40,62,74);
+}
+.a-post {
+	margin-top: 15px;
+	background: white;
+	padding: 15px 20px 15px 20px;
+	transition: all 10s ease-in-out;
+}
+.userprofile {
+	/*padding: 15px;*/
+}
+.userimg {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.userimg:hover {
+	cursor: pointer;
+}
+.username {
+	font-weight: 600;
+	margin-bottom:  7px;
+}
+.username:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	font-weight: 600;
+}
+.posttime {
+	font-weight: 400;
+	color: #cccccc;
+	margin: 0;
+}
+.post-functions {
+	margin-top: 5px;
+	position: relative;
+	height: 30px;
+	border-top: 1px solid #cccccc;
+}
+.function-icon {
+	width: 20px;
+	height: 20px;
+}
+.likes {
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+.likes:hover {
+	cursor: pointer;
+}
+.likes p:hover {
+	text-decoration: underline;
+	color: rgb(40,62,74);
+}
+.like-icon {
+	margin-top: 5px;
+}
+.like-text {
+	font-weight: 500;
+	color: #8e8e8e;
+	margin: 5px 0 5px 10px;
+}
+.people-who-liked {
+	top: 0; 
+	left: 25px;
+	position: relative;
+	height: 30px;
+}
+.people-who-liked img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+}
+.people-who-liked img:nth-child(2) {
+	left: 15px;
+} 
+.comments {
+	position: absolute;
+	left: 350px;
+	top: 15px;
+}
+.comments:hover {
+	cursor: pointer;
+}
+.comments p:hover {
+	text-decoration: underline;
+	color: rgb(40,62,74);
+}
+.sharelink {
+	position: absolute;
+	left: 250px;
+	top: 15px;
+}
+.sharelink:hover {
+	cursor: pointer;
+}
+.sharelink p:hover {
+	text-decoration: underline;
+	color: rgb(40,62,74);
+}
+.comment-text {
+	font-weight: 500;
+	color: #8e8e8e;
+	margin: 0px 0 5px 10px;
+}
+.share-text {
+	font-weight: 500;
+	color: #8e8e8e;
+	margin: 0px 0 5px 10px;
+}
+.a-connection {
+	margin-top: 15px;
+	background: white;
+	padding: 15px 20px 15px 20px;
+}
+.connection-content {
+	margin: 10px 0 10px 70px;
+}
+.connect-with-photo {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+.connect-with-info {
+	margin: 10px 20px 0 15px;
+}
+.connect-with-someone {
+	margin: 0;
+	font-weight: 500;
+}
+.connect-with-someone-info {
+	margin: 0;
+	font-weight: 400;
+	color: #8e8e8e;
+}
+.connect-with-action {
+	margin: 17px 0 19px 0;
+	padding: 0 5px 0 5px;
+	border: 1px solid rgb(40,62,74);
+	color: rgb(40,62,74);
+	font-weight: 500;
+}
+.connect-with-action:hover {
+	color: white;
+	background-color: rgb(40,62,74);
+	cursor: pointer;
+}
+.a-job {
+	margin-top: 15px;
+	background: white;
+	padding: 15px 20px 15px 20px;
+}
+.new-job-company-photo {
+	width: 60px;
+	height: 60px;
+}
+
+.a-article {
+	background: white;
+	margin-top: 15px;
+	padding: 15px 20px 15px 20px;
+}
+.article-box {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #dadada;
+}
+.article-box:hover {
+	cursor: pointer;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.article-cover-photo {
+	width: 110px;
+	height: 60px;
+}
+.article-content {
+	margin-left: 10px;
+}
+.article-title {
+	margin: 0;
+	font-size: 16px;
+	color: rgb(40,62,74);
+	font-weight: 600;
+}
+.article-detail {
+	margin: 0;
+	font-weight: 300;
+	overflow: hidden;
+}
+.article-show-more {
+	justify-content: center;
+	background: white;
+	font-weight: 600;
+	color: rgb(40,62,74);
+	border-top: 1px solid #cccccc;
+	padding: 10px 0 10px 0;
+}
+.article-show-more:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.network-col {
+	justify-content: flex-start;
+	width: 210px;
+	min-width: 210px;
+	background: white;
+	padding: 10px;
+}
+.a-network {
+	margin: 10px 0 10px 0;
+	border-bottom: 1px solid #cccccc;
+}
+.network-info {
+	margin-top: 5px;
+	margin-left: 15px;
+}
+.connect-actions {
+	margin-top: 13px;
+	margin-bottom: 10px;
+	justify-content: center;
+}
+.connect-actions div:nth-child(1) {
+    padding: 0 5px 0 5px;
+    margin: 0 20px 0 0px;
+    border: 1px solid rgb(40,62,74);
+    color: rgb(40,62,74);
+    font-weight: 500;
+    border-radius: 2px;
+}
+.connect-actions div:nth-child(1):hover {
+	background: rgb(40,62,74);
+	color: white;
+	cursor: pointer;
+}
+.connect-actions div:nth-child(2):hover {
+	background: rgb(40,62,74);
+	color: white;
+	cursor: pointer;
+}
+.connect-actions div:nth-child(2) {
+	margin: 0 0 0 0;
+    padding: 0 5px 0 5px;
+    border: 1px solid rgb(40,62,74);
+    color: rgb(40,62,74);
+    font-weight: 500;
+    border-radius: 2px;
+}
+.jobs-show-more {
+	justify-content: center;
+	background: white;
+	font-weight: 600;
+	color: rgb(40,62,74);
+	padding-top: 10px;
+}
+.jobs-show-more:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.network-show-more {
+	justify-content: center;
+	background: white;
+	font-weight: 600;
+	color: rgb(40,62,74);
+	padding: 0;
+}
+.network-show-more:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
